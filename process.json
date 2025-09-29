@@ -1,0 +1,18 @@
+{
+  "apps": [
+    {
+      "name": "ccxt-api",
+      "script": "dist/main.js",
+      "instances": 1,
+      "exec_mode": "cluster",
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": "7923"
+      },
+      "env_development": {
+        "NODE_ENV": "development",
+        "PORT": "7923"
+      }
+    }
+  ]
+}
